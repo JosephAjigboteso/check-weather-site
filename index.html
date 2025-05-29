@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Joe's Intel</h1>
+            <h2>Weather Site</h2>
+        </header>
+        <section class="weather-details">
+            <input type="text" placeholder="Enter city name" id="nameOfCity">
+            <button id="getBtn">Get Weather</button>
+            <p class="city"></p>
+            <p class="reload-btn">Reload <i class="fas fa-sync-alt"></i> </p>
+            <p class="date">5/29/2025, 9:41:16 PM</p>
+            <img src="" alt="" class="weather-icon">
+            <div class="temp-cont">
+                <p class="temp-display"></p> <i class="fas fa-toggle-on" id="unitBtn"></i>
+            </div>
+            <p class="temp-review"></p>
+            <p class="wind-speed">Wind Speed: </p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

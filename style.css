@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header h1 {
+    color: #008000;
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.8rem + 1vw, 3rem);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.3599999999999999rem + 0.7000000000000002vw, 2.2rem);
+    text-align: center;
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.weather-input {
+    align-self: ;
+}
+
+.weather-details button {
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+#nameOfCity {
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    width: 60%;
+    outline: none;
+    border: 1px solid rgb(100, 100, 100);
+    color: rgb(50, 50, 50);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#nameOfCity::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+#getBtn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: opacity 0.15s ease-out;
+}
+
+#getBtn:hover {
+    opacity: 0.85;
+    font-weight: bold;
+}
+
+
+.date,
+.wind-speed {
+    color: #ff0000;
+}
+
+.weather-icon {
+    margin: 5px 0px;
+}
+
+.temp-review {
+    margin: 10px 0px;
+    font-size: 18px;
+    color: rgb(50, 50, 50);
+    text-transform: capitalize;
+}
+
+.city {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.temp-display {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reload-btn {
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.reload-btn:active {
+    color: rgb(100, 100, 100);
+}
+
+#unitBtn {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.temp-cont {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fa-toggle-on {
+    color: #2ecc71;
+}
+
+.fa-toggle-off {
+    color: #3498db;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 70rem) {
+    .weather-details {
+        margin-top: 15%;
+    }
+
+    main {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 45rem) {
+    main {
+        width: 80%;
+    }
+}
