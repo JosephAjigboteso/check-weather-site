@@ -2,7 +2,7 @@
 window.addEventListener('load', changeBackground(document.body));
 
 window.addEventListener('load', function(){
-    const hasSeenPopup = localStorage.getItem('hasSeenPopup');
+    const hasSeenPopup = sessionStorage.getItem('hasSeenPopup');
 
     if (!hasSeenPopup) {
         document.querySelector('.pop-up').style.display = 'flex';
@@ -77,7 +77,7 @@ acceptBtn.addEventListener('click', function(){
     nameOfCity.disabled = false;
     getBtn.disabled = false;
     defaultBtn.disabled = false;
-    localStorage.setItem('hasSeenPopup', 'true'); 
+    sessionStorage.setItem('hasSeenPopup', 'true'); 
 })
 
 //Set default city Mode
