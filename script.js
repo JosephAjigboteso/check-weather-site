@@ -63,6 +63,8 @@ let units = JSON.parse(localStorage.getItem('units')) || {
 let unit =  `${units.unit}`;
 let unitName = `${units.unitName}`;
 
+//remove existing toggle class and add the one saved in local storage
+unitBtn.classList.remove('fa-toggle-on', 'fa-toggle-off');
 unitBtn.classList.add(`${units.className}`);
 
 //Accepting condition -- Hide pop-ups and display default city
@@ -163,6 +165,8 @@ function displayWeather(data) {
    const localTime = new Date((data.dt + data.timezone) * 1000);
    date.innerText= localTime.toLocaleString();
    unitBtn.style.display = 'inline-block';
+   unitBtn.style.opacity = '1';
+    unitBtn.style.pointerEvents = 'auto';
 }
 function handleError (){
  let nameOfCityValue = document.getElementById('nameOfCity').value.trim()
@@ -174,7 +178,9 @@ removeData(tempDisplay)
 removeData(tempReview)
 removeData(windSpeed)
 removeData(date)
-removeData(unitBtn)
+//disable and hide unitBtn
+unitBtn.style.opacity = '0';
+unitBtn.style.pointerEvents = 'none';
 reloadpage();
 }
 
